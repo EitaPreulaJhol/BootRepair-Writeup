@@ -227,7 +227,7 @@ When the system shuts down (`IRP_MJ_SHUTDOWN`), the driver checks `KeGetCurrentI
 | `0x10B8` | `DelayMs` | KeDelayExecutionThread wrapper |
 | `0x10E0` | `InstallLenovoServices` | Core service installation routine |
 | `0x1930` | `StartRoutine` | System thread (retry loop) |
-| `0x198C` | `TerminateProcess` | PID → ZwTerminateProcess |
+| `0x198C` | `TerminateProcess` | ZwTerminateProcess implementation |
 | `0x1A20` | `RegWriteConditional` | Conditional registry write |
 | `0x1AEC` | `CreateRegKey` | ZwCreateKey wrapper |
 | `0x1BB4` | `RegReadValue` | ZwQueryValueKey wrapper |
