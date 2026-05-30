@@ -14,7 +14,7 @@
 
 ## 1. Overview
 
-`BootRepair.sys` is a Windows kernel-mode driver (native subsystem, no Win32 dependencies) that acts as a **service installer and process terminator** for the Lenovo PcManager software suite. Despite its benign-sounding name, it contains significant functionality:
+`BootRepair.sys` is a Windows kernel-mode driver that acts as a **service installer and process terminator** for the Lenovo PcManager software suite. Despite its name, it contains significant functionality:
 
 - Registers three system services by writing directly to the registry.
 - Exposes an IOCTL that can **terminate an arbitrary process by PID** — a kill switch.
