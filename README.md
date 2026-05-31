@@ -44,7 +44,7 @@ The driver is digitally signed by Lenovo with a valid timestamp (Symantec CA cha
 
 On load (`DriverEntry`):
 
-1. Creates `\Device\::BootRepair` (a device with an unusual double-colon `::` name — this may be intentional to obscure it).
+1. Creates `\Device\::BootRepair` (a device with an unusual double-colon `::` name).
 2. Spawns a **system thread** running `StartRoutine` — this is where the real work begins.
 3. Creates a Win32-visible symbolic link `\DosDevices\BootRepair`.
 4. Registers for shutdown notification (to install services on shutdown as a fallback).
